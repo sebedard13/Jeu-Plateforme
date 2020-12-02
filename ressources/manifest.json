@@ -1,0 +1,46 @@
+{
+
+  "manifest": [
+
+    {"id": "arbre",  "src": "ressources/images/arbre1.png"},
+    {"id": "buisson",  "src": "ressources/images/buisson1.png"},
+    {"id": "gazon",  "src": "ressources/images/grass1.png"},
+    {"id": "gazon2",  "src": "ressources/images/grass2.png"},
+    {"id": "bloc1",  "src": "ressources/images/bloc1.png"},
+    {"id": "bloc2",  "src": "ressources/images/bloc2.png"},
+    {"id": "fond",  "src": "ressources/images/fond.png"},
+    {"id": "fondu",  "src": "ressources/images/fondu.png"},
+    {"id": "intro",  "src": "ressources/images/TextIntro.png"},
+    {"id": "instruction",  "src": "ressources/images/Instruction.png"},
+    {"id": "btCheck",  "src": "ressources/images/btCheck.png"},
+
+    {"id": "perso", "src": "ressources/images/perso.png"},
+    {"id": "hitBoxPerso", "src": "ressources/images/hitBoxPerso.png"},
+
+    {"id": "dino2", "src": "ressources/images/dino2.png"},
+    {"id": "dino", "src": "ressources/atlas/monstreAvancer.json", "type": "spritesheet"},
+
+    {"id": "sortie", "src": "ressources/images/exit.png"},
+    {"id": "hitBoxSortie", "src": "ressources/images/hitBoxSortie.png"},
+
+    {"id": "win", "src": "ressources/images/win.png"},
+    {"id": "lost", "src": "ressources/images/lost.png"},
+    {"id": "bigRecom", "src": "ressources/images/bigRecommencer.png"},
+
+    {"id": "boutonR", "src": "ressources/images/boutonR.png"},
+    {"id": "boutonL", "src": "ressources/images/boutonL.png"},
+    {"id": "boutonU", "src": "ressources/images/boutonU.png"},
+    {"id": "boutonRejouer", "src": "ressources/images/boutonRejouer.png"},
+
+
+    {"id": "perso2", "src": "ressources/atlas/marcher.json", "type": "spritesheet"},
+
+    {"id": "music", "src": "ressources/sons/music.ogg"},
+    {"id": "click", "src": "ressources/sons/click.mp3"},
+    {"id": "hit", "src": "ressources/sons/hit.mp3"},
+    {"id": "sortieSons", "src": "ressources/sons/sortie.mp3"},
+    {"id": "sauter", "src": "ressources/sons/sauter.mp3"}
+
+  ]
+
+}

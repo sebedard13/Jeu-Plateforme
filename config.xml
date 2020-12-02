@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<widget
+        xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "ca.dectim.mi3.superjeu"
+        version     = "0.0.1"
+>
+
+    <!-- Identification et description -->
+    <name>Petit Platformer</name>
+
+    <description>
+        Le SuperJeu du cours de Médias interactifs III
+    </description>
+
+    <author href="https://dectim.ca" email="1822733@cegepmontpetit.ca">
+        Sébastien Bédard
+    </author>
+
+    <icon src="ressources/icones/xxxhdpi.png" />
+
+    <!-- Ciblage de la dernière version -->
+    <preference name='phonegap-version' value='cli-9.0.0' />
+
+    <!-- Paramètres généraux -->
+    <preference name="Orientation" value="landscape" />
+    <preference name="Fullscreen" value="true" />
+
+</widget>

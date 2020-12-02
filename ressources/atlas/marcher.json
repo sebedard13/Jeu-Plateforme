@@ -1,0 +1,24 @@
+{
+
+"images": [
+    "ressources/atlas/marcher.png"
+],
+
+"framerate": 8,
+"frames": [
+    [1, 1, 73, 110, 0, 36.5, 55],
+    [1, 113, 73, 110, 0, 36.5, 55],
+    [76, 1, 73, 110, 0, 36.5, 55],
+    [151, 1, 73, 110, 0, 36.5, 55]
+],
+
+"animations": {
+    "marcher": { "frames": [1, 0, 2, 3] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:59d0d92488affd837d80248c7885d405:c25eb91047209386424442180304a3eb:ac5a4f0e79b9df0d05c8bc4fed67bd7f$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}
