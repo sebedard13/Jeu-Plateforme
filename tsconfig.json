@@ -1,0 +1,7 @@
+{
+ "files": ["scripts/*.ts"],
+ "compilerOptions": {
+   "noImplicitAny": true,
+   "target": "es6"
+ }
+}

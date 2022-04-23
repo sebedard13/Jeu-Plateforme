@@ -1,11 +1,18 @@
 import {jeu} from "./script.js";
+import {checkCollide} from "./Jeu.js";
 
 const vitesseEfficaceX = 9;
 const viteseEfficaceSaut = -26 ;
 
 export class Perso extends createjs.Sprite {
+    private aTerre: boolean;
+    private direction: string;
+    private vitesseX : number;
+    private vitesseY : number;
+    public collisionBox: createjs.Bitmap;
+    private fBouger: any;
 
-    constructor(atlas) {
+    constructor(atlas: createjs.SpriteSheet) {
         //Construction Perso, variable et fonction
         super(atlas);
 
@@ -33,7 +40,7 @@ export class Perso extends createjs.Sprite {
 
     }
 
-    gererTouchePesee(e) {
+    gererTouchePesee(e: { key: string; }) {
         //Gère "keydown" pour ordi et va vers la bonne fonction
         if (e.key === "ArrowRight") {
             this.marcherD()
@@ -45,7 +52,7 @@ export class Perso extends createjs.Sprite {
         }
     }
 
-    gererToucheLachee(e) {
+    gererToucheLachee(e: { key: string; }) {
         //Gère "keyup" pour ordi
         if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
             this.mouseUpMarcher()
@@ -120,8 +127,8 @@ export class Perso extends createjs.Sprite {
             }
 
             //Collision avec le sol
-            jeu.plateformes.children.forEach(function (element) {
-                    if (ndgmr.checkRectCollision(element, this.collisionBox)) {
+            jeu.plateformes.children.forEach(function (element: createjs.DisplayObject) {
+                    if (checkCollide(element.getTransformedBounds(), this.collisionBox.getTransformedBounds())) {
                         //Calcule pente par rapport au bloc
                         let differancX = this.collisionBox.x - element.x;
                         let differancY = this.collisionBox.y - element.y;
@@ -218,13 +225,13 @@ export class Perso extends createjs.Sprite {
             {
               this.x = 0;
             }
-            else if (this.x > jeu.stage.canvas.width)
+            else if (this.x > jeu._width)
             {
-              this.x = jeu.stage.canvas.width;
+              this.x = jeu._width;
             }
 
             //Si il tombe hors du stage, tu perds
-            if(this.y > jeu.stage.canvas.height)
+            if(this.y > jeu._height)
             {
                 jeu.fToLost();
             }
