@@ -1,4 +1,6 @@
-class Sortie extends createjs.Bitmap {
+import {jeu} from "./script.js";
+
+export class Sortie extends createjs.Bitmap {
 
     constructor() {
         super(jeu.chargeur.getResult("sortie"));

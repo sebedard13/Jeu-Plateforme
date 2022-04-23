@@ -1,4 +1,8 @@
-class Jeu {
+import {Sortie} from "./Sortie.js";
+import {Perso} from "./Perso.js";
+import {Ennemi} from "./Ennemi.js";
+
+export class Jeu {
     constructor() {
         this.parametres = {
             canevas: "canvas",
@@ -23,7 +27,7 @@ class Jeu {
         alert("Une erreur de chargement est survenue! Rechargez la page.");
     }
 
-    fInitialiser(e) {
+    fInitialiser() {
         this.stage = new createjs.StageGL(this.parametres.canevas, {antialias: true});
         createjs.Touch.enable(this.stage);
 
@@ -65,7 +69,7 @@ class Jeu {
         createjs.Tween.get(persoAnim).to({x:925}, 3000).call(this.fDemarrer.bind(this));
     }
 
-    fDemarrer(e) {
+    fDemarrer() {
         //Initialise le jeu, les variables, le UI etc.
 
         //Musique
@@ -231,7 +235,7 @@ class Jeu {
             objet.regX = objet.getBounds().width/2;
             objet.regY = objet.getBounds().height/2;
             objet.y = 639 + objet.getBounds().width/2;
-            objet.x = 0  + i*objet.getBounds().width + objet.getBounds().width/2;
+            objet.x = i*objet.getBounds().width + objet.getBounds().width/2;
             this.level.addChild(objet);
         }
 

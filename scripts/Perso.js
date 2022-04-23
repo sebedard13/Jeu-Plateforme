@@ -1,8 +1,9 @@
+import {jeu} from "./script.js";
+
 const vitesseEfficaceX = 9;
-const vitesseEfficaceY = 9;
 const viteseEfficaceSaut = -26 ;
 
-class Perso extends createjs.Sprite {
+export class Perso extends createjs.Sprite {
 
     constructor(atlas) {
         //Construction Perso, variable et fonction

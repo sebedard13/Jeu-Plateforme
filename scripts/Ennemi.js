@@ -1,4 +1,6 @@
-class Ennemi extends createjs.Sprite {
+import {jeu} from "./script.js";
+
+export class Ennemi extends createjs.Sprite {
 
     constructor(atlas, xMin, xMax) {
         super(atlas);
