@@ -1,5 +1,5 @@
-import {jeu} from "./script.js";
-import {checkCollide} from "./Jeu.js";
+import {jeu} from "./main";
+import {checkCollide} from "./Jeu";
 
 
 export class Ennemi extends createjs.Sprite {

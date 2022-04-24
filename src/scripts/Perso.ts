@@ -1,5 +1,5 @@
-import {jeu} from "./script.js";
-import {checkCollide} from "./Jeu.js";
+import {jeu} from "./main";
+import {checkCollide} from "./Jeu";
 
 const vitesseEfficaceX = 9;
 const viteseEfficaceSaut = -26 ;

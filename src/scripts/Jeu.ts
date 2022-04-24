@@ -1,6 +1,7 @@
-import {Sortie} from "./Sortie.js";
-import {Perso} from "./Perso.js";
-import {Ennemi} from "./Ennemi.js";
+import {Sortie} from "./Sortie";
+import {Perso} from "./Perso";
+import {Ennemi} from "./Ennemi";
+
 
 export class Jeu {
     private parametres: { manifeste: string; cadence: number; canevas: string };
